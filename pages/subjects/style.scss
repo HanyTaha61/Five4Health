@@ -1,0 +1,87 @@
+.blog{
+
+    .container{
+
+        .row{
+
+            h5{
+             
+            }
+
+            .content{
+                line-height: 2.5;
+
+                h5{
+                    background-color: var(--primary-color);
+                    color: #fff;
+                    width: fit-content;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 0.25rem;
+                    padding-bottom: 0.25rem;
+
+                }
+                
+                .list_content{
+                    list-style: none;
+                    margin-bottom: 0.5rem;
+
+                    .list-group-item{
+                        background-color: #fdfdfd !important;
+                        transition: 0.3s;
+                        padding: 0 !important;
+
+                        &:hover a{
+                            background-color: var(--primary-color);
+                            color: #fff !important;
+                        }
+
+                        li{
+
+
+                            a{
+                                text-decoration: none;
+                                transition: 0.3s;
+                                padding: 0.25rem !important;
+                                color: #000;
+                            }
+                        }
+                    }
+                    .list-group-item + .list-group-item{
+                        border-top-width: 1px !important;
+                    }
+                }
+            }
+
+            .card{
+                
+                h6{
+                    transition: 0.3s;
+                    position: relative;
+                    padding: 5px 10px;
+                }
+                a{
+                    display: block;
+                    overflow: hidden;
+
+
+                    img{
+                        transition: 0.3s;
+
+                        &:hover{
+                            transform: scale(1.5);
+                            filter: blur(3px) grayscale(0.5);
+                        }
+
+                    }
+
+                    &:hover + h6{
+                        color: #fff;
+                        background-color: rgba(1,1,1,0.5);
+                        top: -30px;
+                    }
+                }
+            }
+        }
+    }
+}
