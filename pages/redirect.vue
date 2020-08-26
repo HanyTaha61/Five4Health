@@ -26,7 +26,8 @@ export default {
     layout: 'none',
     computed:{
         setUrl(){
-            return 'https://five4health.netlify.app/redirect/?article=zKPa'
+               return 'https://five4health.netlify.app/redirect/?article=99tu'
+            // return 'https://five4health.netlify.app/redirect/?article=zKPa'
         }
     },
     methods:{
@@ -53,6 +54,8 @@ export default {
                 document.location.href="http://gestyy.com/ewgHvB"
             }else if(this.$route.query.article == 'zKPa'){
                 document.location.href="http://gestyy.com/ewzKPa"
+            }else if(this.$route.query.article == '99tu'){
+                document.location.href="http://gestyy.com/ew99tu"
             }
         }
     },
