@@ -59,7 +59,7 @@ export default {
             }
         }
     },
-    beforeCreate(){
+    beforeMount(){
         this.redirect()
     }
 }
