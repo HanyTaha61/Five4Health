@@ -2,7 +2,7 @@
     <div class="blog pb-5">
         <div class="container">
             <b-card-group deck class="">
-                <h4 class="d-block text-right mb-3 w-fit px-3 py-2 bg-color2 text-light">آخر المواضيع</h4>
+                <h4 class="d-block text-right mb-3 rounded w-fit p-1 bg-color2 text-light">آخر المواضيع</h4>
                 <b-row>
                     <b-col md="6" lg="4" v-for="(item, i) in latest_articles" :key="i">
                         <router-link :to="`./subjects/${item.title}`">
@@ -85,8 +85,8 @@ export default {
 .blog{
 
     .card-deck{
-        h4{
-            border-radius: 10px;
+        h4.title{
+            color: red !important;
         }
         h6{
             font-size: 0.75em
